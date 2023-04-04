@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역속성 class와 id의 차이</title>
+    <style>
+        .drunk
+        {
+            font-size: 40px;
+            color: red;
+        }
+        
+        #alcohol-1
+        {
+            font-size: 25px;
+            color: green;
+        }
+
+        #alcohol-2
+        {
+            font-size: 50px;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>class</h1>
+        <div>공백으로 구분된 요소의 별칭을 지정</div>
+        <div>* 한 태그 안에서 중복 가능</div>
+        <div>css적용 시 . 을 이용해 검색</div>
+
+    <h1>id</h1>
+        <div>문서에서 고유한 식별자를 정의</div>
+        <div>중복 불가능</div>
+        <div>css적용 시 # 을 이용해 검색</div>
+        <br>
+
+
+    <div class="drunk">조니워커</div>
+    <div class="drunk">잭다니엘</div>
+    <div id="alcohol-1">맥캘란</div>
+    <div id="alcohol-2">발베니</div>
+    <div class="drunk">발렌타인</div>
+    <br><br>
+    
+    <h1>title 속성 : 요소의 정보를 지정</h1>
+    <h2 title="이것은 제목2 입니다">제목2</h2>
+    <div title="이것은 DIV태그입니다.">DIV태그</div>
+    
+</body>
+</html>

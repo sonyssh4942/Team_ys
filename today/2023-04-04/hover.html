@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+        /* 태그 뒤에 : 붙히면 가상클래스 선택자*/
+        a:hover{ 
+            color: red;
+            font-size: 25px;
+        }
+
+        .box{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .box:hover{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>가상 클래스 선택자</h1>
+
+    <h2>hover</h2>
+    마우스가 올라가 있는 동안에만 선택
+    <a href="https://google.com" >google</a>
+    <div class="box"></div>
+
+</body>
+</html>
