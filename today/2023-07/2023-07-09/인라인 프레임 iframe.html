@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 프레임</title>
+</head>
+<body>
+    <h1>인라인 프레임</h1>
+    iframe태그를 이용하면 현재 HTML페이지 내에 내장 윈도우를 만들고 다른 HTML페이지를 출력할 수 있다. <br>
+    iframe태그를 통해 만들어지는 윈도우를 <mark>인라인 프레임</mark> 이라고 한다. <br>
+    보통 페이지 내에 유튜브 동영상 등을 삽입할때 사용한다.
+
+    <hr>
+
+    <h1>iframe 태그 속성</h1>
+    <ul>
+        <li>src : 출력할 웹 페이지의 URL 주소</li>
+        <li>srcdoc : 직접 HTML 태그로 작성된 텍스트로서 출력될 내용</li>
+        <li>name : 프레임 윈도우의 이름, 다른 웹 페이지에서 target속성 값으로 사용</li>
+        <li>width : 프레임의 너비, 픽셀 값, 기본값-300px</li>
+        <li>height : 프레임의 높이, 필셀 값, 기본값-150px</li>
+        <li>frameborder : 프레임의 테두리 사용여부, 기본값-0 선없음</li>
+        <li>allowfullscreen : 전체화면 모드 사용여부</li>
+    </ul>
+
+    <hr>
+
+    <h1>iframe 태그 주의사항</h1>
+    1. iframe은 body태그 내 에서만 사용해야 한다. <br><br>
+    2. src 속성이 생략되면 프레임이 생성되긴 하지만 빈 상태로 존재한다. <br><br>
+    3. HTML 텍스트를 srcdoc 속성에 직접 작성할 수 있다. 그럴경우 src속성은 무시된다. <br><br>
+    <iframe src="하이퍼링크 a.html" frameborder="1" width="300px" height="150px" srcdoc="src속성 값은 있지만 텍스트가 출력됨"></iframe>
+    <br><br>
+    4. 인라인 프레임 속 또다른 인라인 프레임을 중첩할 수 있다. <br>
+
+    <hr>
+
+    <h1>iframe 만들기</h1>
+
+    <h3>iframe name 속성, 하이퍼 링크 target 속성을 이용하여 인라인 프레임에서 페이지 열기</h3>
+
+    - 왼쪽 프레임은 left, 오른쪽 프레임은 right라고 name 속성을 입력했다. <br>
+    - left 프레임 구글 target 속성에 left를 입력했다. <br>
+    - right 프레임 네이버 target 속성에 right를 입력했다. <br><br>
+
+    구글 링크를 누르면 왼쪽 프레임에서 구글사이트가 열리고, <br><br>
+    네이버 링크를 누르면 오른쪽 프레임에서 네이버사이트가 열린다. <br><br>
+
+    <div style="color: red;">* 대부분의 사이트는 보안상의 이유로 iframe 태그로 연결할 수 없다.</div>
+
+    <a href="http://google.com/" target="left">left 프레임 구글</a> <br>
+    <a href="http://naver.com/" target="right">right 프레임 네이버</a> <br>
+
+
+    <iframe src="하이퍼링크 a.html" frameborder="1" width="700px" height="500px" name="left"></iframe>
+    <iframe src="이미지삽입.html" frameborder="1" width="700px" height="500px" name="right"></iframe>
+
+    
+</body>
+</html>

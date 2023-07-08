@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이퍼링크</title>
+</head>
+<body>
+    <h1>하이퍼링크</h1>
+    하이퍼링크는 a 태그를 사용하며 href 속성을 이용해 주소를 입력한다. <br><br>
+
+    a 태그의 속성들
+    <ul>
+        <li>href : 이동할 HTML 페이지의 URL 혹은 HTML 페이지 내 앵커 이름</li>
+        <li>target : 링크에 연결된 HTML 페이지가 출력될 윈도우 이름 지정</li>
+        <li>download : 링크가 클릭되면 href에 지정된 파일이 다운로드됨</li>
+    </ul>
+
+    <hr><!---------------------------------------------------------------------------------------------------->
+
+    <h1>하이퍼 링크 target 속성</h1>
+    target 속성에는 4가지의 선택지가 있다. <br>
+    <ul>
+        <li>_blank : 새 윈도우</li>
+        <li>_self : 현재 윈도우</li>
+        <li>_parent : 부모 윈도우</li>
+        <li>_top : 브라우저 윈도우</li>
+    </ul> 
+    <a href="http://www.naver.com" target="_blank">네이버 하이퍼링크(_blank 새 윈도우)</a> <br>
+    <a href="http://www.naver.com" target="_self">네이버 하이퍼링크(_self 현재 윈도우)</a> <br>
+    <a href="http://www.naver.com" target="_parent">네이버 하이퍼링크(_parent 부모 윈도우)</a> <br>
+    <a href="http://www.naver.com" target="_top">네이버 하이퍼링크(_top 브라우저 윈도우)</a> <br>
+
+    <hr><!------------------------------------------------------------------------------------------------------>
+
+    <h1>id 속성으로 앵커 만들기</h1>
+    긴 내용을 가진 웹페이지를 읽을때 사용자는 스크린을 오르락내리락하며 읽어야 한다. <br>
+    그래서 문서 내에서 특정 위치로 이동하는 링크를 만들어야 한다. <br>
+    이러한 링크를 <mark>앵커</mark>라고 한다. <br>
+    특정 부분에 id 속성으로 고유 이름을 지정하고 a 태그의 href 속성에 <mark>#앵커이름(id값)</mark>을 입력하여 만들 수 있다. <br><br><br>
+
+    <a href="#top">1. 가장 윗 부분(top)으로 가기</a> <br>
+    <a href="#middle">2. 중간 부분(middle)으로 가기</a> <br>
+    <a href="#bottom">3. 가장 아래 부분(bottom)으로 가기</a> <br>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p id="top">1. 가장 윗 부분</p> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p id="middle">2. 중간 부분</p> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p id="bottom">3. 가장 아래 부분</p> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

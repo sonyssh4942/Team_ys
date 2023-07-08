@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표만들기</title>
+</head>
+<body>
+    HTML에서 아래와 같은 태그들로 표를 작성할 수 있다. <br>
+    표 전체는 table 태그로 감싸며 이곳에 표제목, 헤드 ,바디, 바닥을 모두 포함한다. <br>
+
+    <h2>테이블 태그</h2>
+    <ul style="display: inline-block;">
+        <li>table : 표 전체를 담는 컨테이너</li>
+        <li>caption : 표 제목</li>
+        <li>thead : 헤딩 셀 그룹</li>
+        <li>tfoot : 바닥 셀 그룹</li>
+        <li>tbody : 데이터 셀 그룹</li>
+        <li>tr : 행, 여러 개의 td, th 포함</li>
+        <li>th : 제목(헤딩)셀</li>
+        <li>td : 데이터 셀</li>
+    </ul>
+    
+    <table border="1" style="display: inline-block;">
+        <caption>1학기 성적</caption>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>황기태</td>
+                <td>80</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>이재문</td>
+                <td>95</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>이병은</td>
+                <td>40</td>
+                <td>61</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>합</th>
+                <th>225</th>
+                <th>230</th>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <hr>
+
+    <h1> 테이블의 셀 병합</h1>
+    th, td 태그에 colspan, rowspan 속성을 통해 병합을 할 수 있다. <br><br><br>
+    <table border="1">
+        <caption>1학기 성적</caption>
+        <thead>
+            <tr>
+                <th colspan="2">이름</th>
+                <th>HTML</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">황기태</td>
+                <td>80</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                
+                <td>95</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>이병은</td>
+                <td>40</td>
+                <td>61</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>합</th>
+                <th>225</th>
+                <th>230</th>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    1. "이름"이라고 적힌 th태그에 <mark>colspan="2"</mark> 라는 속성을 추가해 <mark>가로로 2칸</mark>을 합병한 것이다. <br><br>
+    2. "황기태"라고 적힌 td태그에 <mark>rowspan="2"</mark> 라는 속성을 추가해 <mark>세로로 2칸</mark>을 합병한 것이다. <br><br>
+    <div style="color: red;">
+        * 병합을 사용하기 위해선 병합되는 칸을 제거해줘야 한다. <br>
+        "이름" 오른쪽에 "HTML"을 제거했고, "황기태" 밑에 "이재문"을 제거한 결과이다.
+    
+    </div>
+</body>
+</html>

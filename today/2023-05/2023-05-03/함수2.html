@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수2</title>
+</head>
+<body>
+    
+    <h3>eval 함수</h3>
+    <hr>
+    eval()은 수식이나 자바스크립트 문장을 문자열 형태로 전달받아
+    실행한 후 결과를 리턴한다
+    <br>
+    <script>
+        let res = eval("2*3+4*6");
+        document.write(res);
+        
+    </script>
+<br><br><br>
+    
+    <h3>parseInt 함수</h3>
+    <hr>
+    parseInt() 함수는 문자열을 숫자로 변환하여 리턴한다
+
+
+    <br><br><br>
+    
+    <h3>isNaN 함수</h3>
+    <hr>
+    isNaN() 함수는 숫자가 아님을 나타내는 리터럴 키워드<br>
+    숫자가 아니면 true를 리턴한다
+    <br>
+    <script>
+        isNaN(32)       // false 리턴, 32는 숫자
+        isNaN('32')     // false 리턴, 32는 숫자값의 문자열
+        isNaN("32")     // false 리턴, 32는 숫자값의 문자열
+        isNaN("hello")  // true 리턴, hello는 숫자가아님
+        isNaN(NaN)      // true 리턴, NaN은 숫자가아님
+    </script>
+        
+    
+</body>
+</html>

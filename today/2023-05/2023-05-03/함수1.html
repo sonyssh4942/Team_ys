@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수1</title>
+    <script>
+        function adder(a, b)    //함수생성
+        {
+            let sum;
+            sum = a + b;
+            return sum;
+        }
+    </script>
+</head>
+<body>
+    <h3>함수1 adder 실습</h3>
+    <script>
+        let n = adder(123456, 456789);              //함수호출
+        document.write("adder 실행결과 : " + n )    //함수출력
+    </script>
+</body>
+</html>

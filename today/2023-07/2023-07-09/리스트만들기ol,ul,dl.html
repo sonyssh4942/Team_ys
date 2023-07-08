@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리스트만들기</title>
+</head>
+<body>
+    리스트는 데이터를 나열할 때 사용되며 종류는 다음 3가지이다. <br><br>
+    
+    1. 순서 있는 리스트(ordered list) - ol <br>
+    2. 순서 없는 리스트(unordered list) - ul <br>
+    3. 정의 리스트(definition list) - dl <br><br>
+
+    리스트의 각 아이템은 li 태그를 사용하여 작성한다. <br><br>
+    css를 통해 리스트 색 꾸미기, 아이템의 마커 꾸미기 등을 할 수 있다. <br>
+    <hr>
+    <h1>ol 태그(순서 있는 리스트)</h1>
+    <ol>
+        <li>책</li>
+        <li>컵</li>
+        <li>핸드폰</li>
+        <li>필통</li>
+    </ol>
+    순서가 있는 ol태그는 번호의 타입과 순서를 설정할 수 있다. <br>
+    type = "1" "A" "a" "I" "i" <br>
+    start = "value"  <- 시작순서를 설정 <br><br>
+
+    <ol type="1" start="5">
+        <li>책</li>
+        <li>컵</li>
+        <li>핸드폰</li>
+        <li>필통</li>
+    </ol>
+    <ol type="A" start="3">
+        <li>책</li>
+        <li>컵</li>
+        <li>핸드폰</li>
+        <li>필통</li>
+    </ol>
+
+    <hr>
+
+    <h1>ul 태그(순서 없는 리스트)</h1>
+    <ul>
+        <li>책</li>
+        <li>컵</li>
+        <li>핸드폰</li>
+        <li>필통</li>
+    </ul>
+    
+    리스트 안에 다른 리스트를 중첩할 수 있다. <br>
+    
+    <h2>내가 좋아하는 것</h2>
+    <ul>
+        <li>내가 좋아하는 음식 많아요</li>
+            <ul>
+                <li>감자탕</li>
+                <li>스파게티</li>
+                <li>올레국수</li>
+            </ul>
+        <li>라면 먹기 좋아해요</li>
+            <ol>
+                <li>물을 끊인다.</li>
+                <li>라면과 스프를 넣는다.</li>
+                <li>파를 썰어 넣는다.</li>
+                <li>한 입에 다 먹는다.</li>
+            </ol>
+        <li>여름에는 바다로</li>
+        <li>겨울에는 산으로</li>
+    </ul>
+
+    <hr>
+
+    <h1>dl 태그(정의 리스트)</h1>
+    정의 리스트는 (용어, 설명)을 하나의 아이템으로 나열하는 리스트이다. <br>
+    정의 리스트 전체는 dl 태그를 사용하며, 각 아이템에서 <br>
+    <mark>용어는 dt 태그로, 설명은 dd 태그로 표현한다.</mark> <br><br>
+
+    dl - dt - dd 순서로 작성한다고 생각 <br><br>
+
+    <h2>웹 브라우저 종류</h2>
+    <dl title="용어는 strong 으로 진하게 표시함">
+        <dt><strong>Internet Explorer</strong></dt>
+        <dd>마이크로소프트에서 만든 브라우저로 현재 국내 시장에서 가장 많이사용</dd>
+
+        <dt><strong>Firefox</strong></dt>
+        <dd>Mozilla 재단에서 오픈 소스로 만든것으로 W3C의 웹 표준을 선도</dd>
+
+        <dt><strong>Chrome</strong></dt>
+        <dd>구글에서 만든 것으로 좋은 디버거를 갖추고 있어 디버깅에 많이 사용</dd>
+    </dl>
+</body>
+</html>
