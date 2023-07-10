@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택형 입력</title>
+</head>
+<body>
+    <h1>선택형 입력</h1>
+    input 태그의 checkbox / radio type을 이용하여 목록에서 사용자가 선택하는 방식의 입력요소를 만들 수 있다. <br>
+    checked 속성을 사용하여 사용자가 선택하기 전에 선택상태로 만들 수 있다. <br>
+
+    <hr>
+
+    <h1>체크박스</h1>
+    체크박스는 선택/해제 중 하나를 선택하는 폼 요소이다. <br><br>
+    <form action="">
+        Q.오늘 저녁 메뉴는? <br>
+        <input type="checkbox" checked name="" id=""> 한식 ---- checked 속성입력 <br>
+        <input type="checkbox" name="" id=""> 중식 <br>
+        <input type="checkbox" name="" id=""> 일식 <br>
+        <input type="checkbox" name="" id=""> 양식 <br>
+    </form>
+
+    <hr>
+
+    <h1>라디오 버튼</h1>
+    라디오 버튼은 <mark>name속성 값이 같은 버튼</mark>들이 하나의 그룹을 형성하여 <mark>하나만 선택</mark> 하는 폼 요소이다. <br><br>
+    <form action="">
+        Q.오늘 저녁 메뉴는? <br>
+        <input type="radio" name="china" id=""> 짜장면 <br>
+        <input type="radio" name="china" id=""> 짬뽕 <br>
+        <input type="radio" name="china" id=""> 볶음밥 <br>
+        <input type="radio" name="korea" id=""> 비빔밥 ------ name속성 값이 달라 중복 선택할 수 있다. <br>
+    </form>
+
+    <hr>
+
+    <h1>콤보박스</h1>
+    select / option 태그를 이용해 선택지가 있는 콤보박스를 만들 수 있다. <br>
+    option 태그의 value 속성 값이 submit 됐을때 전송되는 값이다. <br>
+    option 태그의 selected 속성으로 선택상태로 만들 수 있다. <br><br>
+
+    <h3>select / option</h3>
+    <form action="">
+        <select name="" id="">
+            <option value="짜장면">짜장면</option>
+            <option value="짬뽕" selected>짬뽕</option>
+            <option value="볶음밥">볶음밥</option>
+        </select>
+    </form>
+    
+    <br>
+
+    <h3>datalist / option</h3>
+    나라 : <input type="text" list="contry">  -----[input type="text" list="contry"] <br>
+    <datalist id="contry">
+        <option>일본</option>
+        <option>대만</option>
+        <option>태국</option>
+        <option>베트남</option>
+    </datalist>
+    <br>
+    
+    <div style="color: red;">
+        *주의사항 <br>
+        datalist 태그는 옵션 리스트에서 <mark>선택하거나 직접입력하지만</mark> <br>
+        select 태그는 <mark>선택만 가능하다</mark>
+    </div>
+
+    
+
+</body>
+</html>
