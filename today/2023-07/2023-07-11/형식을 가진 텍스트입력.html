@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형식을 가진 택스트 입력</title>
+</head>
+<body>
+    <h1>형식을 가진 텍스트 입력</h1>
+    input 태그의 type에는 이메일 주소, URL 전화번호와 같이 <br>
+    특정 형식에 맞게 입력되었는지 <mark>검사하는 폼 요소</mark>들을 제공한다. <br><br>
+
+    <hr>
+
+    <h2>1. 이메일주소 / input type="email"</h2>
+
+    <form action="">
+        <input type="email" name="" id=""> <input type="submit" value="submit">
+    </form> <br>
+
+    type="text"와 모양은 같지만 이메일주소의 형식만 입력할 수 있다. <br>
+    submit 버튼이 클리되면 웹 서버로 전송하기전에 <mark>형식 검사</mark>가 수행된다. <br>
+    올바른 형식이 아니라면 오류메세지를 출력하고 전송하지 않는다. <br>
+
+    <hr>
+
+    <h2>2. URL 주소 / input type="url"</h2>
+
+    <form action="">
+        <input type="url" name="" id="" placeholder="http://"> <input type="submit" value="submit">
+    </form> <br>
+
+    URL만 입력받는 태그로서 'http://www.naver.com'와 같이 W3C의 규정에 맞도록 입력되어야 한다. <br>
+    웹 서버로 전송될 때 <mark>유효성이 자동으로 검사된다.</mark> <br>
+    사용자의 바른 입력을 유도하기 위해 placeholder 속성 사용을 권장한다. <br>
+
+    <hr>
+
+    <h2>3. 전화번호 / input type="tel"</h2>
+
+    <form action="">
+        <input type="tel" name="" id="" placeholder="010-"> <input type="submit" value="submit">
+    </form> <br>
+
+    전화번호의 형식이 워낙 다양하므로, 이 태그는 유효성 검사를 하지 않는다. <br>
+    사용자의 바른 입력을 위해 placeholder 속성 사용을 권장한다. <br>
+
+    <hr>
+
+    <h2>4. 검색어 입력 / input type="search"</h2>
+
+    <form action="">
+        <input type="search" name="" id=""> <input type="submit" value="submit">
+    </form> <br>
+
+    검색어 입력 창을 만들 수 있다. <br>
+
+    <hr>
+
+    <h3>회원 정보를 입력해 주세요.</h3>
+    <form action="">
+        email : <input type="email"> <br>
+        홈페이지 : <input type="url"> <br>
+        전화번호 : <input type="tel" placeholder="010-">
+    </form>
+
+    <hr>
+
+    <h1>폼 요소들의 그룹핑 / fieldset</h1>
+    fieldset 태그를 이용하여 <mark>폼 요소들을 그룹으로</mark> 묶을 수 있다. <br>
+    그룹의 제목은 legend 태그로 표현한다. 브라우저는 그룹을 외곽선 박스와 제목을 출력하여 표현한다. <br><br>
+
+    <h3>회원정보를 입력해 주세요.</h3>
+    
+    <form action="">
+        <fieldset>
+            <legend>회원정보</legend>
+            이메일 : <input type="email"> <br>
+            홈페이지 : <input type="url"> <br>
+            전화번호 : <input type="tel"> <br>
+        </fieldset>
+    </form>
+</body>
+</html>

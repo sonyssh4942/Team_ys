@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>label 실습</title>
+</head>
+<body>
+    <h1>label 태그의 활용</h1>
+    input태그의 radio, checkbox 혹은 select 태그를 사용할 때 label태그를 활용할 수 있다. <br><br>
+
+    <hr>
+
+    <h1>label 사용 전</h1>
+    <div style="color: red;">* 체크버튼과 텍스트가 별개로 나누어져 있기 때문에 체크버튼을 정확히 클릭해야 한다.</div>
+    
+    <h3>1. checkbox</h3>
+    <form action="">
+        Q.오늘 저녁 메뉴는? <br>
+        <input type="checkbox" name="" id=""> 한식 <br>
+        <input type="checkbox" name="" id=""> 중식 <br>
+        <input type="checkbox" name="" id=""> 일식 <br>
+        <input type="checkbox" name="" id=""> 양식 <br>
+    </form>
+
+    <h3>2. radio</h3>
+    <form action="">
+        Q.오늘 저녁 메뉴는? <br>
+        <input type="radio" name="china" id=""> 짜장면 <br>
+        <input type="radio" name="china" id=""> 짬뽕 <br>
+        <input type="radio" name="china" id=""> 볶음밥 <br>
+        <input type="radio" name="korea" id=""> 비빔밥<br>
+    </form>
+
+    <hr>
+
+    <h1>label 사용 후</h1>
+    <div style="color: red;">* 체크버튼과 텍스트가 label태그로 묶여 있기 때문에 텍스트를 클릭해도 선택할 수 있다.</div>
+
+    <h3>1. checkbox</h3>
+    <form action="">
+        Q.오늘 저녁 메뉴는? <br>
+        <label><input type="checkbox" name="" id=""> 한식</label> <br>
+        <label><input type="checkbox" name="" id=""> 중식</label> <br>
+        <label><input type="checkbox" name="" id=""> 일식</label> <br>
+        <label><input type="checkbox" name="" id=""> 양식</label> <br>
+    </form>
+
+    <h3>2. radio</h3>
+    <form action="">
+        Q.오늘 저녁 메뉴는? <br>
+        <label><input type="radio" name="china" id=""> 짜장면</label> <br>
+        <label><input type="radio" name="china" id=""> 짬뽕</label> <br>
+        <label><input type="radio" name="china" id=""> 볶음밥</label> <br>
+        <label><input type="radio" name="korea" id=""> 비빔밥</label><br>
+    </form>
+</body>
+</html>
