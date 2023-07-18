@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상클래스 선택자</title>
+    <style>
+        #hover:hover{
+            color: red;
+        }
+
+        #active:active{
+            color: red;
+        }
+
+        #focus:focus{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>가상클래스 선택자</h1>
+    '가상' 이라는 단어가 의미하듯이 어떤 특정한 상황이 발생하였을 때만 적용하도록 만들어진 선택자이다. 
+    <br><br>
+
+    <hr>
+
+    :hover <br>
+    - E에 마우스가 <mark>올라가 있는 동안</mark> 선택 <br>
+
+    <h4 id="hover">가상클래스 선택자 hover</h4>
+
+
+
+    :active <br>
+    - E를 마우스로 <mark>클릭하고 있는동안</mark> 선택 <br>
+
+    <h4 id="active">가상클래스 선택자 active</h4>
+
+
+
+    :focus <br>
+    - E가 <mark>포커스 된 동안</mark> 선택 <br>
+
+    <input type="text" value="focus" id="focus"> <br><br>
+
+
+    
+    :first-child <br>
+    - E가 형제요소 중 <mark>첫번째 요소라면</mark> 선택 <br><br>
+
+    :last-child <br>
+    - E가 형제요소 중 <mark>마지막 요소라면</mark> 선택 <br><br>
+
+    :nth-child(n) <br>
+    - E가 형제 요소 중 <mark>n번째 요소라면</mark> 선택 (0부터 해석) <br><br>
+
+    :nth-of-child(n) <br>
+    - E의 타입(태그이름)과 동일한 타입인 형제요소중 <mark>E가 n번째 요소라면</mark> 선택 <br><br>
+</body>
+</html>
