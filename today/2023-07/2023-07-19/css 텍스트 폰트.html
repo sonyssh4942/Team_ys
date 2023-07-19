@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 폰트</title>
+</head>
+<body>
+    <h1>텍스트 폰트</h1>
+
+    <h2>1. font-style : 글자 기울기 지정</h2> <br>
+    <ul>
+        <li>normal : 스타일 없음</li>
+        <li>italic : 이텔릭체 (활자) (기울기)</li>
+        <li>oblique : 기울어진 글자 (잘안씀)</li>
+    </ul>
+    <div style="font-style: normal;">normal</div>
+    <div style="font-style: italic;">italic</div>
+    <div style="font-style: oblique;">oblique</div>
+
+    <hr>
+
+    <h2>2. font-weight : 글자 두께 지정</h2> <br>
+    <ul>
+        <li>normal : 기본글자, 두께 400과 동일</li>
+        <li>bold : 두껍게, 두께 700과 동일</li>
+        <li>bolder : 부모요소보다 두껍게 (bold 보다 두꺼운게 아님)</li>
+        <li>lighter : 부모요소보다 얇게</li>
+        <li>숫자 : 100 ~ 900 까지의 100단위 숫자</li>
+    </ul>
+
+    <div style="font-weight: normal;">normal</div>
+    <div style="font-weight: bold;">bold</div>
+    <div style="font-weight: bolder;">bolder</div>
+    <div style="font-weight: lighter;">lighter</div>
+    
+
+    <hr>
+
+    <h2>3. font-size : 글자 크기 지정</h2>
+    <ul>
+        <li>단위 : px / em / cm / 등 단위 지정 (기본값 : 16px)</li>
+        <li>%</li>
+        <li>xx-small</li>
+        <li>x-small</li>
+        <li>small</li>
+        <li>medium</li>
+        <li>large</li>
+        <li>x-large</li>
+        <li>xx-large</li>
+        <li>smaller : 부모요소보다 작게</li>
+        <li>larger : 부모요소보다 크게</li>
+    </ul>
+
+    <hr>
+
+    <h2>4. font-family : 글꼴 지정 (운영체제에 따라 다름)</h2>
+    구체적인 폰트 이름을 지정한다. 하지만 폰트가 브라우저에서 지원되지 않을 경우를 대비하여 여러개의 폰트를 지정한다. <br>
+    후보에서 선택을 못 할 경우, 지정한 글꼴계열에서 <mark>비슷한것을 찾아 선택한다.</mark> <br><br>
+
+    font-family : 글꼴후보1, 글꼴후보2, 글꼴계열 <br><br>
+
+    <ul>
+        글꼴 계열들
+        <li>serif : 바탕체 계열</li>
+        <li>sans-serif : 고딕체 계열</li>
+        <li>monospace : 고정너비(가로폭이 동등한) 글꼴계열</li>
+        <li>cursive : 필기체 계열</li>
+        <li>fantasy : 장식(재미있는 문자표현을 포함하는) 글꼴계열</li>
+    </ul>
+    <div style="font-family: serif;">serif</div>
+    <div style="font-family: sans-serif;">sans-serif</div>
+    <div style="font-family: monospace;">monospace</div>
+    <div style="font-family: cursive;">cursive</div>
+    <div style="font-family: fantasy;">fantasy</div>
+</body>
+</html>

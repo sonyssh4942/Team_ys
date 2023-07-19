@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 그림자</title>
+    <style>
+        div{
+            font-size: 25px;
+        }
+
+        #d1{
+            text-shadow: 10px 10px 10px red;
+        }
+
+        #d2{
+            text-shadow: 15px 5px 5px red;
+        }
+
+        #d3{
+            text-shadow: 10px 20px 2px red;
+        }
+
+        #d4{
+            text-shadow: 0px 0px 10px red;
+        }
+
+        #d5{
+            text-shadow: 3px 5px 1.5px red;
+        }
+    </style>
+</head>
+<body>
+    <h1>텍스트 그림자 text-shadow</h1>
+    text-shadow 프로퍼티를 이용하면 텍스트에 <mark>그림자 효과를</mark> 줄 수 있다. <br><br>
+
+    text-shadow : h-shadow / v-shadow / blur-radius / color / none
+
+    <ul>
+        <li>h, v - shadow : 원본 텍스트와 그림자 텍스트 사이의 수평/수직 거리 (필수)</li>
+        <li>blur-radius : 흐릿한 그림자를 만드는 효과로 흐릿하게 번지는 길이 (선택)</li>
+        <li>color : 그림자 색</li>
+        <li>none : 그림자 효과 없음</li>
+    </ul>
+
+    <hr>
+
+    <div id="d1">TEXT-SHADOW</div> <br>
+    <div id="d2">TEXT-SHADOW</div> <br>
+    <div id="d3">TEXT-SHADOW</div> <br>
+    <div id="d4">TEXT-SHADOW</div> <br>
+    <div id="d5">TEXT-SHADOW</div> <br>
+    
+</body>
+</html>

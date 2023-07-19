@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테두리선 border</title>
+    <style>
+        div{
+            width: 600px;
+            border-color: yellowgreen;
+        }
+        
+        #p1{
+            width: 300px;
+            height: 100px;
+            background-color: yellowgreen;
+            border-radius: 50px;
+        }
+    
+        #p2{
+            width: 300px;
+            height: 100px;
+            background-color: yellowgreen;
+            border-radius: 10px 20px 30px 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>border style의 종류</h1>
+    
+    <hr>
+
+    <div style="border-style: none; border-width: 3px;">3 픽셀 none 선없음</div> <br>
+
+    <div style="border-style: hidden; border-width: 3px;">3 픽셀 hidden 선없음과 동일 (table 요소에서 사용, 잘안씀)</div> <br>
+
+    <div style="border-style: solid; border-width: 3px;">3 픽셀 solid 실선 (일반선)</div> <br>
+
+    <div style="border-style: dotted; border-width: 3px;">3 픽셀 dotted 점선</div> <br>
+
+    <div style="border-style: dashed; border-width: 3px;">3 픽셀 dashed 파선</div> <br>
+
+    <div style="border-style: double; border-width: 3px;">3 픽셀 double 두줄선</div> <br>
+
+    <div style="border-style: groove; border-width: 15px;">15 픽셀 groove 홈이 파여있는 모양</div> <br>
+
+    <div style="border-style: ridge; border-width: 15px;">15 픽셀 ridge groove 반대</div> <br>
+
+    <div style="border-style: inset; border-width: 15px;">15 픽셀 inset 들어간 모양</div> <br>
+
+    <div style="border-style: outset; border-width: 15px;">15 픽셀 outset 돌출된 모양</div> <br>
+
+    <hr>
+
+    <h1>둥근 테두리 만들기 : border-radius</h1>
+    border-radius 를 이용해 반지름을 지정하여 테두리를 둥글게 만들 수 있다. <br><br>
+
+    <p id="p1">둥근 모서리 테두리</p>
+
+    시계방향 순서로 반지름을 따로 지정할 수 있다. <br>
+    <p id="p2">둥근 모서리 테두리</p>
+</body>
+</html>

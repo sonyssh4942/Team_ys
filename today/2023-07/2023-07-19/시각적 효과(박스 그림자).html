@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 그림자</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border-width: 5px;
+            border-style: solid;
+            box-shadow: 10px 10px 30px red 
+        }
+    </style>
+</head>
+<body>
+    <h1>박스 그림자 box-shadow</h1>
+    box-shadow 프로퍼티를 이용하면 박스 테두리에 <mark>그림자 효과를</mark> 줄 수 있다. <br><br>
+
+    box-shadow : h-shadow / v-shadow / spread-radius / color / none / inset
+
+    <ul>
+        <li>h, v - shadow : 원본 텍스트와 그림자 텍스트 사이의 수평/수직 거리 (필수)</li>
+        <li>spread-radius : 그림자 크기(선택, 디폴트 0)</li>
+        <li>color : 그림자 색</li>
+        <li>none : 그림자 효과 없음</li>
+        <li>inset : 음각 박스로 보이게 그림자 형성</li>
+    </ul>
+
+    <hr>
+
+    <div></div>
+</body>
+</html>
