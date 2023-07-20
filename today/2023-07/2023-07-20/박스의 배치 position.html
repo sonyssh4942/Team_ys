@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스의 배치 position</title>
+</head>
+<body>
+    <h1>박스의 배치 position</h1>
+    브라우저는 웹 페이지에 나타난 순서대로 HTML 태그를 배치한다. <br>
+    이를 <mark>normal flow</mark>라고 한다. <br>
+    position 프로퍼티를 이요하면 이를 무시하고 원하는 위치에 박스를 배치할 수 있다. <br><br>
+
+    <ul>
+        <li>정적 배치 - position : static (디폴트)</li> <br>
+        <li>상대 배치 - position : relative</li> <br>
+        <li>절대 배치 - position : absolute</li> <br>
+        <li>고정 배치 - position : fixed</li> <br>
+        <li>유동 배치 - float : left 혹은 right</li> <br>
+    </ul>
+
+    <hr>
+
+    <h1>정적 배치 position : static</h1>
+    <p>
+        정적 배치는 웹 페이지가 작성된 순서대로 HTML 태그의 출력 위치를 정하는 방식이다. <br>
+        그러므로 정적 배치에서 <mark>left, top, bottom, right 프로퍼티의 값은 위치에 영향을 주지 않는다.</mark> = 배치 불가능
+    </p>
+
+    <hr>
+
+    <h1>상대 배치 position : relative</h1>
+    <p>
+        normal flow에 따라 HTML 태그가 출력되는 위치를 <mark>기본 위치</mark>라고 한다. <br>
+        relative 스타일이 주어지면 태그는 '기본위치'에서 left, top, bottom, right 프로퍼티 값만큼 이동한 <mark>상대 위치</mark>에 배치된다. <br>
+    </p>
+    <img src="배치-relative.jpg" alt="" style="width: 1000px;"> <br><br>
+    상대 배치된 HTML 태그는 다른 태그의 위치에 영향을 주지 않는다. 
+</body>
+</html>
