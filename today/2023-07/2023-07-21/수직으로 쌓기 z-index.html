@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수직으로 쌓기 z-index</title>
+    <style>
+        div{
+            position: absolute;
+        }
+        img{
+            position: absolute;
+        }
+
+        #p1{
+            z-index: 5;
+        }
+        #p2{
+            z-index: 10;
+            left: 30px;
+            top: 30px;
+        }
+        #p3{
+            z-index: 15;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>수직으로 쌓기 z-index</h1>
+    z 축을 따라 수직으로 쌓는순서를 지정하는 프로퍼티로 값이 클수록 위헤 쌓인다. <br>
+    z-index의 지정이 없을경우 HTML에 나오는 순서로 값이 자동으로 결정된다. <br>
+    position 프로퍼티가 relative, absolute, fixed 일때 사용할 수 있다. <br><br>
+
+    <hr>
+
+    <div>
+        <img src="스폰지밥.jpg" alt="" id="p1">
+        <img src="뚱이.jpg" alt="" id="p2">
+        <img src="징징이.jpg" alt="" id="p3">
+    </div>
+</body>
+</html>

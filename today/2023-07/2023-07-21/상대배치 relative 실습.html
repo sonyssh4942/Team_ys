@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배치 relative 실습</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            display: inline-block;
+            text-align: center;
+            color: white;
+        }
+
+        #H:hover{
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: darkgreen;
+        }
+
+        #K:hover{
+            position: relative;
+            right: 20px;
+            bottom: 20px;
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>상대 배치 relative 실습</h1>
+    
+    <hr>
+    <br><br>
+    H와 K에 마우스를 올려보세요 <br><br><br>
+    <div>T</div>
+    <div id="H">H</div>
+    <div>A</div>
+    <div>N</div>
+    <div id="K">K</div>
+    <div>S</div>
+</body>
+</html>

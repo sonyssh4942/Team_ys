@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전환</title>
+</head>
+<body>
+    <h1>전환</h1>
+    HTML 태그에 적용된 <mark>CSS 프로퍼티 값이 변할때</mark> 값의 변화를 서서히 진행시켜 <br>
+    애니메이션 효과를 내는 것이며 1회만 이루어진다. <br><br>
+
+    transition : CSS속성의 전환 효과를 지정, CSS 속성의 시작과 끝을 지정하여 중간 값을 애니메이션
+
+    <ul>
+        <li>transition - property  :  전환효과를 사용할 속성 이름 (기본값 = all)</li>
+        <li>transition - duration  : 전환효과의 지속시간 설정 (기본값 = 0s)</li>
+        <li>transition - timing - function : 타이밍 함수 지정 (기본값 = ease)</li>
+        <li>trasition - delay : 전환 효과의 대기시간 설정 (기본값 = 0s)</li>
+    </ul>
+
+
+    <br><br>
+
+
+    <hr>
+
+
+    <h1>전환 실습</h1>
+    글자에 마우스를 올려보세요 <br><br>
+
+
+    <style>
+        span{
+            transition-property: all;
+            transition-duration: 5s;
+        }
+
+        span:hover{
+            font-size: 500%;
+            color: red;
+        }
+    </style>
+    <span>꽝~!</span>
+
+    <br><br>
+
+    <pre>
+        span{
+            transition-property: all;
+            transition-duration: 5s;
+        }
+
+        span:hover{
+            font-size: 500%;
+            color: red;
+        }
+    </pre>
+</body>
+</html>
