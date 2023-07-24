@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 변환</title>
+</head>
+<body>
+    <h1>CSS 변환</h1>
+    CSS의 변환(tranform)기능ㅇ르 이용하면 텍스트나 이미지를 회전이나 확대 등 다양한 모양으로 출력할 수 있다. <br><br>
+    
+    <hr>
+
+    <h1>transform 프로퍼티</h1>
+
+    <h2>위치 이동</h2>
+    <ul>
+        <li>translate(x,y) : 태그를 x-축, y-축으로 x,y만큼 이동</li>
+        <li>translateX(n) : 태그를 x-축으로 n만큼 이동</li>
+        <li>translateY(n) : 태그를 y-축으로 n만큼 이동</li>
+    </ul>
+
+    <br><br>
+
+    <h2>확대 / 축소</h2>
+    <ul>
+        <li>scale(w,h) : 태그의 폭과 높이를 각각 w,h 배 만큼 조절 (0일경우 안보임)</li>
+        <li>scaleX(n) : 태그의 폭을 n배 만큼 조절</li>
+        <li>scaleY(n) : 태그의 높이를 n배 만큼 조절</li>
+    </ul>
+
+
+    <br><br>
+
+
+    <h2>기울임</h2>
+    <ul>
+        <li>skew(x-angle,y-angle) : 태그를 X-축과 Y-축을 기준으로 각각 x-angle, y-angle 각도만큼 기울임 변환</li>
+        <li>skewX(angle) : 태그를 x-축을 기준으로 angle 각도만큼 기울임</li>
+        <li>skewY(angle) : 태그를 y-축을 기준으로 angle 각도만큼 기울임</li>
+    </ul>
+
+
+    <br><br>
+
+
+    <h2>회전</h2>
+    <ul>
+        <li>rotate(angle) : 태그를 angle 각도만큼 시계방향으로 회전</li>
+    </ul>
+
+
+    <hr>
+
+
+    <h1>변환 실습</h1>
+
+    <style>
+        span{
+            background-color: yellowgreen;
+            display: inline-block;
+            
+        }
+
+        #translate{
+            transform: translate(10px,20px);
+        }
+
+        #scale{
+            transform: scale(1,2);
+        }
+
+        #skew{
+            transform: skew(10deg, 30deg);
+        }
+
+        #rotate{
+            transform: rotate(45deg);
+        }
+    </style>
+
+    <h2>위치이동</h2>
+    <span id="translate">translate(10px,20px)</span>
+
+
+    <br><br><br>
+
+    <h2>확대 /축소</h2>
+    <span id="scale">scale(1,2)</span>
+
+
+    
+    <br><br><br>
+
+    <h2>기울임</h2>
+    <span id="skew">skew(10deg,30deg)</span>
+
+
+
+    <br><br><br>
+
+    <h2>회전</h2>
+    <span id="rotate">rotate(45deg)</span>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

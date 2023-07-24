@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 변수</title>
+</head>
+<body>
+    <h1>변수의 사용 범위</h1>
+    변수는 사용 범위에 따라 다음 3가지로 나뉜다. <br><br>
+
+
+    <ul>
+        <li>전역 변수 : 함수 밖에서 선언되거나 var / let 키워드 없이 <mark>아무 곳에서나 선언된 변수</mark>, <br>
+            프로그램 전역에 걸쳐 사용가능
+        </li>
+        <br>
+        <li>
+            지역 변수 : 함수 내에서 <mark>var / let 키워드로 선언된 변수</mark> 함수가 시작되면 생겨나서 함수가 종료되면 사라짐 <br>
+            선언된 함수 내에서만 사용 가능
+        </li>
+        <br>
+        <li>
+            블록 변수 : let 키워드로 if, while, for 등 <mark>블록 내에 선언된 변수</mark> 블록 내에서만 사용, 발록 바깥에서는 접근 불가
+        </li>
+    </ul>
+
+
+    <hr>
+
+    <h1>this로 전역변수 접근</h1>
+    <p>
+        지역 변수와 전역 변수의 이름이 같을 때, this를 이용하면 함수 내에서도 전역 변수를 접근 할 수 있다. <br>
+        <pre>
+            var x=10;           // 전역 변수 x 선언
+            function f() {
+                var x;          // 지역 변수 x 선언
+                x = 1;          // 지역 변수 x에 1저장
+                this.x = 100;   // 전역 변수 x에 100저장
+            }
+        </pre>
+
+        <mark>let으로 선언된 전역 변수는 this로 접근할 수 없다.</mark>
+    </p>
+
+
+</body>
+</html>
