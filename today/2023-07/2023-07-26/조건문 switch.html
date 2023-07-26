@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문 switch</title>
+</head>
+<body>
+    <h1>switch 문</h1>
+    <mark>값에 따라 서로 다른 코드를 실행할 때</mark>, if-else 문보다 switch문이 적합하다. <br><br>
+
+<hr>
+    <pre>
+        var fruits = "사과"; <br>
+        var price = 0; <br><br>
+        switch(fruits){ <br>
+            case "사과": <br>
+                price=100; <br>
+                break; <br>
+            case "바나나": <br>
+                price=200; <br>
+                break; <br>
+            case "포도": <br>
+                price=300; <br>
+                break; <br>
+            default: <br>
+                document.write("팔지않습니다.") <br>
+                price=0; <br>
+        } <br>
+        <br>
+        document.write(fruits + "는" + price + "원 입니다.") <br>
+    </pre>
+    <script>
+        var fruits = "사과";
+        var price = 0;
+        switch(fruits){
+            case "사과":
+                price=100;
+                break;
+            case "바나나":
+                price=200;
+                break;
+            case "포도":
+                price=300;
+                break;
+            default:
+                document.write("팔지않습니다.")
+                price=0;
+        }
+        
+        document.write(fruits + "는" + price + "원 입니다.")
+    </script>
+
+    <br><br>
+
+    <img src="case.jpg" alt="" style="width: 1000px;">
+
+    <hr>
+
+    <h1>case 문의 값</h1>
+    <mark>case 문의 값은 const로 선언된 상수나, 리터럴만 가능하다.</mark>
+    <br><br>
+
+    case 1 : <br>
+    case 2.7 : <br>
+    case "asdf" : <br>
+    case true : <br>
+    case 2+3 : <br>
+    
+    <br>
+
+    하지만 case 문의 값에 변수나 식은 사용할 수 없다. 다음은 잘못된 사례이다. <br><br>
+
+    case a : ----- //변수로 선언된 a 는 사용불가 <br>
+    case a > 3 : -----  // a > 3 은 식이므로 사용불가 <br>
+
+    <br><br>
+
+    <hr>
+
+    <h1>switch 문에서 break 의 역할</h1>
+    case 문 내의 실행 문장을 실행한 후 break문을 만나지 못하면 만날때까지 그 아래 다른 case의 실행 문장들을 계속 실행하여 내려간다. <br>
+
+    <img src="break.jpg" alt="" style="width: 1000px;">
+
+
+
+
+    <br><br><br><br><br><br><br><br><br>
+</body>
+</html>

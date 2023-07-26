@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS의 전역함수</title>
+</head>
+<body>
+    <h1>JS의 전역함수</h1>
+    <hr>
+
+    <h2>evar() 함수</h2>
+    수식이나 JS문장을 <mark>문자열 형태로 전달받아</mark> 실행한 후 결과를 리턴한다. <br><br>
+
+    let res = eval("2*3+4*6"); ----- // res는 30
+
+    <br><br>
+    <hr>
+
+    <h2>parseInt() 함수</h2>
+    문자열을 숫자로 변환하여 리턴한다. <br>
+    <img src="parseInt.jpg" alt="" style="width: 1000px;">
+
+    <br><br><br>
+
+    <hr>
+
+    <h2>isNaN() 함수와 parseInt() 함수</h2>
+    false가 거짓 값을 나타내는 리터럴 키워드인 것과 같이 <mark>NaN은 숫자가 아님을 나타내는 리터럴 키워드</mark>이다. <br>
+    isNaN()은 변수의 값이 NaN인지 비교하여 맞으면 true를 리턴하는 함수이다. <br><br>
+
+    <img src="isNaN.jpg" alt="" style="width: 500px;"> <br>
+
+    - 변수 n 에 숫자가 아니라는 NaN 키워드를 대입<br>
+    - isNaN() 숫자가 아니면 true는 리턴함
+
+    <br><br><br>
+
+    isNaN() 함수는 주로 문자를 숫자로 변환하여 리턴하는 parseInt() 함수의 리턴값을 검사하기 위해 다음과 같이 사용된다. <br>
+    <img src="isNaN용도.jpg" alt="" style="width: 1000px;">
+
+    <br><br>
+
+    직접 매개변수에 값을 주어 isNaN()을 호출하기도 한다. <br>
+    <img src="isNaN호출.jpg" alt="" style="width: 1000px;">
+
+    <br><br><br>
+
+    <hr>
+
+    <h2>JS에서 제공하는 전역 함수</h2>
+    <ul>
+        <li>eval( exp ) - exp의 JS식(수식)을 <mark>계산하고 결과 리턴</mark></li> <br>
+        <li>parseInt( str ) - str 문자열을 <mark>정수로 변환하여 리턴</mark></li> <br>
+        <li>parseInt( str, radix ) - str 문자열을 radix 진수로 해석하고 <mark>정수로 변환하여 리턴</mark></li> <br>
+        <li>parseFloat( str ) - str 문자열을 <mark>실수로 변환하여 리턴</mark></li> <br>
+        <li>isFinite( value ) - value가 <mark>숫자면 true</mark> 리턴</li> <br>
+        <li>isNaN( value ) - value가 <mark>숫자가 아니면 true</mark> 리턴</li> <br>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습 1 (요일별 출근여부)</title>
+</head>
+<body>
+    <h1>prompt()함수를 이용하여 월~일 중 하나를 입력받아 <br>
+        월~목의 경우 "출근"을 나머지는 "휴일"을 출력하는 페이지를 완성하라
+    </h1>
+    
+    <hr>
+
+    <script>
+        let a = prompt("월 ~ 일 중에서 입력하세요.", "");
+        switch(a){
+            case "월":
+            case "화":
+            case "수":
+            case "목":
+            case "금":
+                document.write(a + "요일은 출근입니다.");
+                break;
+            case "토":
+            case "일":
+                document.write(a + "요일은 휴일입니다.");
+                break;
+            default : 
+                document.write("잘못 입력했습니다.");
+                break;
+        }
+        
+        
+    </script>
+</body>
+</html>
