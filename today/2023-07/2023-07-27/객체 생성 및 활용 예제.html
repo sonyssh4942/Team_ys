@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 생성 및 활용 예제</title>
+</head>
+<body>
+    <h1>Date 타입의 객체와 String 타입의 객체를 생성하고, 메소드를 호출하고, <br>
+        프로퍼티 값을 읽는 코드 사례를 보인다. <br>
+        new Date()로 생성한 객체는 생성 당시의 날짜와 시간 정보로 초기화 된다. 
+    </h1>
+
+    <hr>
+
+    <script>
+        // Date 객체 생성
+        let today = new Date();
+
+        // Date 객체의 toLocaleString() 메소드 호출
+        document.write("현재 시간 : " + today.toLocaleString() + "<br>");
+
+
+        // String 객체 생성
+        let mystr = new String("자바스크립트 공부하기");
+        document.write("mystr의 내용 : " + mystr + "<br>");
+        document.write("mystr의 길이 : " + mystr.length + "<br>");
+        // mystr.length=10;   이 문장은 오류이다. length는 읽기 전용
+    </script>
+
+    <br><br>
+
+    <img src="이미지/예제.jpg" alt="" style="width: 1000px;">
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array객체의 메소드</title>
+    <script>
+        function pr(msg, arr){
+            document.write(msg + arr.toString() + "<br>");
+        }
+    </script>
+    <style>
+        .let{
+            color: crimson;
+        }
+
+        .주석{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array 객체의 메소드 활용</h1>
+    배열 a = 황, 김, 이 <br><br>
+    배열 b = 박 <br><br><br>
+
+
+    <span class="let">let</span> a = <span class="let">new</span> Array("황", "김", "이"); <br><br>
+    <span class="let">let</span> b = <span class="let">new</span> Array("박"); <br><br>
+    <span class="let">let</span> c <br><br>
+
+    
+    <hr>
+
+
+    <h2>concat(arr)</h2>
+    현재 배열에 배열 <mark>arr의 원소들을 덧붙여 만든 새 배열 리턴</mark>, 현재 배열은 변하지 않음. <br><br><br>
+
+    <span class="let">let</span> a = <span class="let">new</span> Array("황", "김", "이"); <br><br>
+    <span class="let">let</span> b = <span class="let">new</span> Array("박"); <br><br>
+    <span class="let">let</span> c <br><br>
+
+    c = a.concat(b) <span class="주석">----- // c는 a와 b를 연결한 새 배열</span> <br><br>
+
+    <strong>c = 황,김,이,박</strong>
+
+    <br><br>
+
+
+
+    <hr>
+
+
+
+    <h2>join([separator])</h2>
+    배열의 모든 원소를 연결하여 하나의 문자열로 만들어 리턴 <br><br>
+    각 원소 사이에 separator로 <mark>지정된 문자열 삽입</mark> separator가 생략되면 "," 이 사용 <br><br><br>
+
+    <span class="let">let</span> a = <span class="let">new</span> Array("황", "김", "이"); <br><br>
+    <span class="let">let</span> b = <span class="let">new</span> Array("박"); <br><br>
+    <span class="let">let</span> c <br><br>
+
+
+    c = a.join("##") <span class="주석">----- // c는 배열a 각 원소 사이에, ##을 삽입한 형태의 문자열</span> <br><br>
+
+    <strong>c = 황##김##이</strong>
+
+    <br><br>
+
+
+
+    <hr>
+
+
+
+    <h2>reverse()</h2>
+    원소를 역순으로 재배열하고, <mark>이를 복사한 새로운 배열 리턴</mark> <br><br><br>
+
+    <span class="let">let</span> a = <span class="let">new</span> Array("황", "김", "이"); <br><br>
+    <span class="let">let</span> b = <span class="let">new</span> Array("박"); <br><br>
+    <span class="let">let</span> c <br><br>
+
+
+    c = a.reverse() <span class="주석">----- // c는 배열a를 역순으로 재배열한, 새로운 배열</span> <br><br>
+
+    <strong>c = 이,김,황</strong>
+
+    <br><br>
+
+    <strong>a = 이,김,황</strong> <span class="주석">----- // a자체를 새로운 배열로 만들었기 때문에 a도 변함</span> <br><br>
+    
+
+
+    <hr>
+
+
+
+    <h2>slice(idxA, idxB)</h2>
+    두 인덱스 idxA 와 idxB <mark>사이의 원소들로 구성된 새 배열 리턴</mark> <br><br>
+    idxB 의 원소는 포함되지 않음, <mark>idxB가 생략되면 끝 원소까지 포함</mark> <br><br><br>
+
+
+    <span class="let">let</span> a = <span class="let">new</span> Array("황", "김", "이"); <br><br>
+    <span class="let">let</span> b = <span class="let">new</span> Array("박"); <br><br>
+    <span class="let">let</span> c <br><br>
+
+
+    c = a.slice(1, 2) <span class="주석">----- // c는 배열a의 1번원소와 2번원소 사이의 범위를 복사해 새로운 배열 리턴</span> <br><br>
+
+    <strong>c = 김</strong> <span class="주석">----- // "김" 부터 "이" 까지 복사, idxB는 포함하지 않기 때문에 "김"만 출력됨</span> <br><br>
+
+    <br>
+
+    c = a.slice(1) <span class="주석">----- // idxB 의 원소는 포함되지 않음, idxB가 생략되면 끝 원소까지 포함</span> <br><br>
+
+    <strong>c = 김,이</strong> <span class="주석">----- // "김" 부터 복사, idxB를 생략해서 "이"까지 출력됨</span> <br><br>
+
+    <br><br>
+
+    
+
+    <hr>
+
+
+
+    <h2>sort()</h2>
+    문자열 배열의 경우 <mark>문자열을 사전 순으로 정렬하고,</mark> 이를 복사한 새 배열 리턴. <br><br><br>
+
+
+    <span class="let">let</span> a = <span class="let">new</span> Array("황", "김", "이"); <br><br>
+    <span class="let">let</span> b = <span class="let">new</span> Array("박"); <br><br>
+    <span class="let">let</span> c <br><br>
+
+
+    c = a.sort() <span class="주석">----- // c는 배열a를 사전순으로 정렬해 새로운 배열 리턴</span> <br><br>
+
+    <strong>c = 김,이,황</strong> <span class="주석">----- // 사전 순으로 출력</span> <br><br>
+
+    <strong>a = 김,이,황</strong> <span class="주석">----- // a자체를 새로운 배열로 만들었기 때문에 a도 변함</span> <br><br>
+
+    
+
+
+    <hr>
+
+
+
+
+    <h2>toString()</h2>
+    원소들을 모두 연결하여 <mark>하나의 문자열로 만들어 리턴</mark>, 원소 사이에 "," 삽입 <br><br><br>
+
+
+    <span class="let">let</span> a = <span class="let">new</span> Array("황", "김", "이"); <br><br>
+    <span class="let">let</span> b = <span class="let">new</span> Array("박"); <br><br>
+    <span class="let">let</span> c <br><br>
+
+
+    c = a.toString() <span class="주석">----- // toString은 원소 사이에 ","를 넣어 연결된 문자열 생성</span> <br><br>
+
+    <strong>c = 황,김,이</strong>
+
+    <br><br><br>
+
+
+    <hr>
+
+
+    <img src="/이미지/예제 7-4.jpg" alt="" style="width: 1000px;">
+
+
+</body>
+</html>
