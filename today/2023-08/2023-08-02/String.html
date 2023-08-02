@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>String</h1>
+    Strring은 문자열을 객체로 만들어 문자열을 다루기 쉽도록 해주며 문자열을 다루는 많은 메소드를 제공한다. <br><br><br>
+
+    String 객체는 <span style="color: red;">new</span> String()을 이용하여 생성하지만, 문자열 리터럴을 사용하면 자동으로 String 객체가 된다. <br><br>
+
+
+    <span style="color: red;">let</span> hello = <span style="color: red;">new</span> String("Hello"); <br>
+    <span style="color: red;">let</span> hello = "Hello";
+
+    <br><br><br>
+    <hr>
+
+    <h1>String 객체는 수정 불가</h1>
+    String 객체는 일단 생성되면 내부의 문자열 수정이 불가능하다. <br><br>
+    hello.concat()이 실행되어도 원본 hello 객체의 문자열은 변하지 않음을 보여준다. <br><br><br>
+
+    <img src="/이미지/String.jpg" alt="" style="width: 1000px;"> <br><br>
+
+    hello.concat()을 실행하면 hello 와 javascript 를 연결한 새로운 문자열을 생성하여 리턴하는데, <br><br>
+    원본 hello 객체의 문자열은 변함없이 그대로 남는다. 이원칙은 String의 모든 메소드에 해당된다. <br><br>
+
+
+    <hr>
+
+
+    <h1>[ ] 로 문자 접근</h1>
+    문자열은 배열처럼 [ ] 연산자를 사용하여 각 문자를 접근할 수 있다. <br><br>
+
+    <span style="color: red;">let</span> hello = <span style="color: red;">new</span> String("Hello"); <br>
+    <span style="color: red;">let</span> c = hello[<span style="color: red;">0</span>]; <br>
+
+    <span style="color: green;">// c = "H". 문자 H가 아니라 문자열 "H", 자바스크립트는 문자 타입 없음</span>
+
+    
+    <hr>
+
+
+    <h1>String 의 메소드</h1>
+
+    <img src="/이미지/String메소드1.jpg" alt="" style="width: 1000px;"> <br>
+    <img src="/이미지/String메소드2.jpg" alt="" style="width: 1000px;"> <br>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String 활용</title>
+</head>
+<body>
+    <h1>문자열 비교</h1>
+    두 문자열이 같은지 비교할 때는 간단히 ==연산자를 이용한다. == 연산자는 대소문자는 서로 다른것으로 처리한다. <br><br>
+
+    <span style="color: red;">if</span>("hello" == "Hello"){ <span style="color: green;">// false</span> <br>
+        <span style="color: green;">// 두 문자열이 같은 경우 실행문</span> <br>
+    }
+    
+    <br><br>
+
+    비교 연산자는 두 문자열의 길이를 비교하는 것이 아니며, <mark>사전에 나오는 순서를 비교</mark>한다. <br>
+    <span style="color: red;">"hello"</span> > <span style="color: red;">yes</span>
+    <span style="color: green;">// false, hello가 사전에 먼저나옴, 먼저나오는게 작음</span>
+
+
+    <br><br>
+
+    <hr>
+
+    <h1>문자열 연결</h1>
+    문자열 연결은 '+' 연산자나 concat()메소드를 호출한다. <br>
+
+    <span style="color: red;">let</span> hello = "Hello"; <br>
+    <span style="color: red;">let</span> res = hello.concat("javascript"); <br>
+    <span style="color: green;">// res = "Hellojavascript".</span>
+    
+    
+    <br><br>
+
+    <hr>
+
+    <h1>서브 스트링 찾기</h1>
+    indexOF() 메소드는 문자열 내에서 문자열을 검색하여 시작 인덱스를 리턴한다. 없으면 -1을 리턴한다.<br>
+
+    <span style="color: red;">let</span> every = <span style="color: red;">"Boys and Girls"</span>; <br>
+    <span style="color: red;">let</span> index = every.indexOF(<span style="color: red;">"and"</span>); <br>
+    <span style="color: green;">// every에서 and를 검색하여 인덱스 5리턴</span>
+
+    <br><br><br>
+
+    <h1>서브 스트링 리턴</h1>
+    slice() , substr() , substring() 은 내부 문자열을 리턴한다. 다음은 모두 'and'를 리턴한다. <br><br>
+
+    <span style="color: red;">let</span> a = every.slice(<span style="color: red;">5, 8</span>);
+    <span style="color: green;">// 인덱스 5에서 8이전의 문자열 "and" 리턴</span> <br>
+
+    <span style="color: red;">let</span> b = every.substr(<span style="color: red;">5, 3</span>); 
+    <span style="color: green;">// 인덱스 5부터 3개의 문자로 구성된 "and" 리턴</span> <br>
+
+    <span style="color: red;">let</span> c = every.substring(<span style="color: red;">5, 8</span>); 
+    <span style="color: green;">// 인덱스 5에서 8이전의 문자열 "and" 리턴</span> <br>
+
+
+    <br><br><br>
+
+
+    <hr>
+
+
+    <h1>문자열 변경</h1>
+    replace() 메소드는 일부 문자열을 다른 문자열로 변경할 수 있다.<br><br>
+
+    <span style="color: red;">let</span> d = every.replace(<span style="color: red;">"and", "or"</span>); 
+    <span style="color: green;">// "and"를 찾아 "or"로 변경. d = "Boys or Girls"</span>  <br>
+
+    <span style="color: red;">let</span> daughter = <span style="color: red;">"배제현"</span>.replace(<span style="color: red;">"제현", "현제"</span>); <br>
+    <span style="color: green;">// daughter 은 배현제</span>
+    
+
+
+    <br><br><br>
+
+
+
+    <hr>
+
+
+    <h1>대소문자 변경</h1>
+    toUpperCase() 메소드는 문자열을 대문자로 toLowerCase() 메소드는 문자열을 소문자로 변경한다.<br><br>
+
+    <span style="color: red;">let</span> upper = every.toUpperCase(); <br>
+    <span style="color: green;">// "BOYS AND GIRLS"</span>  <br>
+
+    <span style="color: red;">let</span> lower = every.toLowerCase();  <br>
+    <span style="color: green;">// "boys and girls"</span>
+     
+
+
+    <br><br><br>
+
+
+
+    <hr>
+
+
+    <h1>문자열 분할</h1>
+    split() 메소드는 문자열을 여러 개의 문자열로 분할 리턴한다. 다음은 빈칸(" ")을 기준으로 every의 문자열을<br><br>
+    "Boys", "and", "Girls"로 분할하고 이 3개의 문자열로 구성된 배열을 리턴한다. <br><br>
+
+    <span style="color: red;">let</span> sub = every.split(); <br>
+    <span style="color: green;">// 실행결과 3개의 문자열을 가진 배열 sub생성</span>  <br>
+    <span style="color: green;">// sub[0] = "Boys", sub[1] = "and", sub[2] = "Girls"</span>  <br>
+
+     
+
+
+    <br><br><br>
+
+
+
+    <hr>
+
+
+    <h1>문자열 앞뒤의 공백 제거</h1>
+    trim() 메소드는 문자열 앞뒤의 공백(빈칸, '\t', '\n' 등)을 제거한다. <br><br>
+
+    <span style="color: red;">let</span> name = <span style="color: red;">" kitae "</span> <br>
+    name = name.trim();
+    <span style="color: green;">// trim()은 앞뒤 공백을 제거하여 "kitae"를 출력</span>  <br>
+
+     
+
+
+    <br><br><br>
+
+
+
+    <hr>
+
+
+    <h1>문자열 내의 문자 알아내기</h1>
+    charAt() 메소드는 문자열 내에서 특정 위치에 있는 문자를 알아낼 수 있다. <br><br>
+    다음은 every 객체의 첫 번째 문자 B를 문자열"B"로 리턴된다. <br><br>
+
+    <span style="color: red;">let</span> first = every.charAt(<span style="color: red;">0</span>); <br>
+    <span style="color: green;">// first = "B"</span>  <br>
+</body>
+</html>

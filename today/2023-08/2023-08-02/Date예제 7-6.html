@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 예제7-6</title>
+</head>
+<body>
+    <h1>방문시간에 따라 변하는 배경색</h1>
+    
+    <h2>페이지 방문 초시간이 짝수이면 보라색, 홀수이면 하늘색 배경으로 가지는 웹페이지</h2>
+
+    <hr>
+
+    <script>
+        let now = new Date();
+
+        if(now.getSeconds() % 2 == 0){
+            document.body.style.backgroundColor="violet";
+        }else{
+            document.body.style.backgroundColor="skyblue";
+        }
+
+        document.write("현재시간 : ");
+        document.write(now.getHours(), "시 " + now.getMinutes(), "분 " + now.getSeconds(), "초 ");
+    </script>
+</body>
+</html>
