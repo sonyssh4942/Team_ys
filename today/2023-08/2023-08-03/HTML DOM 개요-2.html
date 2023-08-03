@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>DOM의 목적</h1>
+    DOM 객체는 HTML 페이지에 작성된 각 HTML 태그를 객체로 만든 것이다. <br><br>
+
+    브라우저는 왜 HTML 페이지를 로드하면서 각 태그를 객체로 만드는 것일까? <br><br>
+
+    그것은 HTML 페이지가 출력된 후, DOM 객체를 통해 <mark>HTML 태그가 출력된 모양과 콘텐츠를 제어하기</mark>위해서 이다. <br><br><br>
+
+
+    1. 각 HTML 태그에는 모양을 결정하는 CSS 스타일 시트가 동반되므로, DOM 객체를 통해 CSS 스타일의 프로퍼티 값을 바꾸면, <br><br>
+        HTML 태그가 출력된 색이나 모양을 동적으로 제어할 수 있다. <br><br>
+
+    <br>
+
+    2. DOM 객체를 통해 HTML 태그의 콘텐츠, 즉 텍스트나 이미지도 바꿀 수도 있다. <br><br>
+
+
+
+    <hr>
+
+
+    <h2>DOM 트리</h2>
+    브라우저는 HTML 페이지를 로드하면서 HTML 태그의 포함 관계에 따라 DOM 객체들을 트리(tree) 구조로 만드는데 이것을 DOM 트리라고 부른다. <br><br>
+    자바스크립트 코드는 DOM 트리를 따라 DOM 객체들을 마음대로 접근할 수 있다. <br><br>
+
+    <img src="/이미지/DOM트리.jpg" alt="" style="width: 1000px;"> <br><br><br>
+
+    DOM객체는 DOM 트리의 한 노드이므로 DOM 노드 혹은 DOM 엘리먼트라고도 부른다. <br><br><br>
+
+
+    <hr>
+
+
+
+    <h1>DOM 트리의 특징</h1>
+
+    <h2>DOM트리의 루트는 document 객체이다</h2>
+    DOM 트리는 그림 8-2와 같이 document 객체와 그 이하 자식들로 구성된다. <br><br>
+    하지만 <mark>document 객체는 DOM 객체가 아니다.</mark>
+
+    <br><br><br>
+
+    <h2>DOM 객체의 종류는 HTML 태그 종류만큼 있다.</h2>
+    DOM 객체는 HTML 태그 당 하나씩 있으며, 이름은 태그 이름과 같다. <br><br>
+    예를들면 html 객체는 html태그의 속성과 CSS 스타일 정보를 가진다. <br><br>
+</body>
+</html>

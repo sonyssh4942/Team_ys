@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math 활용 구구단 만들기</title>
+    <script>
+        function rn(){
+            return Math.floor(Math.random()*9) + 1;
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Math를 활용한 구구단 연습</h1>
+
+    <hr>
+
+    <script>
+        
+        let gg = rn() + " * " + rn();  //구구단 문제생성
+
+        let q = prompt( gg + "은 얼마일까요?", ""); // 화면 출력 메세지, 문제 출제, 문제의 대답입력
+
+        if(q == null){
+            document.write("구구단 문제를 종료합니다.");
+        }else{
+            let a = eval(gg);   // 계산함수
+            if( a == q){
+                document.write("정답입니다." + gg + " 은 " + a + "입니다.");
+            }else{
+                document.write("틀렸습니다." + gg + " 은 " + a + "입니다.");
+            }
+        }
+    </script>
+</body>
+</html>

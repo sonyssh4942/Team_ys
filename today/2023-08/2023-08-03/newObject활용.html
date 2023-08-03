@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new Object 활용 예제</title>
+    <script>
+        // 객체 만들기(계좌정보 만들기)
+        let tong = new Object;
+
+
+        // 객체의 프로퍼티 만들기
+        tong.name = "배제현";
+        tong.code = 13579;
+        tong.don = 0;
+
+
+        //객체의 메소드를 만들기위해 함수 만들기
+        function jan(){         // 잔액조회
+            return this.don;
+        }
+
+        function plus(money){           // 입금
+            this.don += money;          // money 만큼 더함
+        }
+
+        function chool(money){          // 출금
+            this.don -= money;          // money 만큼 뺌
+            
+        }
+
+        
+        //객체의 메소드 만들기
+        tong.jan = jan;         // 계좌의 잔액을 조회하는 메소드
+        tong.plus = plus;       // 입력한 금액만큼 더하는 메소드
+        tong.chool = chool;     // 입력한 금액만큼 빼는 메소드
+    </script>
+</head>
+<body>
+    <h1>new Object로 상용자 객체 만들기 (계좌정보 만들기)</h1>
+
+    <hr>
+
+    <script>
+        document.write("계좌정보(이름, 코드, 잔액) : ");
+        document.write(tong.name + ", ");
+        document.write(tong.code + ", ");
+        document.write(tong.don + "<br>");
+
+        document.write("현재 잔액 : " + tong.jan() + "<br>");
+
+        tong.plus(10000);
+        document.write("10000원 입금 후 잔액 : " + tong.don + "<br>");
+
+        tong.plus(50000);
+        document.write("50000원 입금 후 잔액 : " + tong.jan() + "<br>");
+
+        tong.chool(20000);
+        document.write("20000원 출금 후 잔액 : " + tong.jan() + "<br>");
+        
+        
+    </script>
+</body>
+</html>

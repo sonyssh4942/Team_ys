@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로토타입</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>프로토타입의 개념과 사용자 객체 만들기</h1>
+
+    Array와 String 객체를 생성하기 위해 new 연산자를 사용했었다. <br><br>
+
+    <span>let</span> week = <span>new</span> Array(<span>7</span>); <br>
+    <span>let</span> hello = <span>new</span> String(<span>"hello"</span>); <br>
+
+    <br><br><br>
+
+
+    new 뒤에 따라오는 Array, Date, String 등을 <mark>프로토타입</mark> 이라고 부른다. <br><br>
+    JAVA 등에서는 클래스라고 부르지만, 자바스크립트에는 클래스가 없다. <br><br>
+    개발자도 프로토타입을 만들고 new 연산자로 객체를 생성하여 활용할 수 있다. <br><br>
+
+
+    <br><br>
+
+
+    프로토타입은 객체의 모양을 가진 틀과 같다. 그러므로 프로토타입에는 객체의 프로퍼티와 메소드를 만들어 두어야 한다. <br><br>
+    비유하자면, 붕어빵은 객체이고, 붕어빵틀이 프로토타입이며, new연산자는 프로토타입으로부터 객체를 찍어내도록 하는 명령이다. <br><br>
+
+
+    <br><br>
+
+
+    <hr>
+
+
+    <h2>프로토타입은 함수로 만든다</h2>
+    프로토 타입은 함수로 작성한다. 다음은 대학명(univ), 학생이름(name), 점수(score) 프로퍼티, <br>
+    그리고 학점을 계산하는 getGrade() 메소드를 가진 프로토타입 Student를 작성한 사례이다. <br><br><br>
+
+    <img src="/이미지/프로토타입.jpg" alt="" style="width: 1000px;">
+
+    <br><br><br>
+
+
+    프로토타입을 만들 때 사용하는 함수를 생성자 함수(constructor)라고 부르는데, <br><br>
+
+    이것은 new로 객체가 생성될때 호출되는 함수이기 때문이다. 
+
+    <hr>
+
+    <h2>new로 객체를 생성하고 활용한다.</h2>
+    이제 new를 이용하여 Student 객체를 생성해보자. 객체는 원하는 만큼 생성할 수 있다. <br><br>
+
+    <img src="/이미지/프로토타입2.jpg" alt="" style="width: 1000px;">
+</body>
+</html>
