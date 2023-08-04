@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM객체들 사이의 관계</title>
+
+</head>
+<body>
+    <h1>DOM 객체들 사이의 관계</h1>
+    DOM 객체들은 DOM 트리에서 그림 8-7과 같이 부모, 자식, 형제의 관계로 연결되는데, 이들은 다음 4개의 프로퍼티가 이용된다. <br><br>
+
+    <ul>
+        <li>parentElement 프로퍼티 - 부모 객체</li> <br>
+        <li>children 프로퍼티 - 직계 자식들의 컬렉션</li> <br>
+        <li>firstElementChild 프로퍼티 - 첫번째 직계 자식</li> <br>
+        <li>lastElementChild 프로퍼티 - 마지막 직계 자식</li> <br>
+    </ul>
+
+    <br><br>
+
+    <mark>sibling</mark>이란 DOM 트리에서 같은 부모의 형제 DOM 객체를 지칭하는 관계이다. <br>
+    sibling 관계에 있는 DOM 객체들은 다음 2개의 프로퍼티로 접근한다. <br><br>
+
+    <ul>
+        <li>previousElemetnSibling 프로퍼티 - 왼쪽 형제 객체, 왼쪽에 형제가 없으면 null</li> <br>
+        <li>nextElemetnSibling 프로퍼티 - 오른쪽 형제 객체, 오른쪽에 형제가 없으면 null</li> <br>
+    </ul>
+
+    <br><br><br>
+
+    모든 DOM 객체들은 W3C의 표준에 따라 이 6개의 프로퍼티를 가지고 다른 DOM 객체를 쉽게 접근할 수 있다. <br>
+    그림 8-7은 DOM 트리에서 DOM 객체들 사이의 관계를 프로퍼티와 함께 보여준다. <br><br><br>
+
+
+    <img src="/이미지/그림8-7.jpg" alt="" style="width: 1000px;">
+</body>
+</html>
