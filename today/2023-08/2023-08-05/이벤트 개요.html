@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 개요</title>
+</head>
+<body>
+    <h1>이벤트 개요</h1>
+    이벤트란 마우스 클릭, 키보드 입력, 이미지나 HTML문서의 로딩, 타임아웃 등 사용자의 입력 행위, <br><br>
+    문서나 브라우저의 상태 변화를 브라우저가 자바스크립트 코드에게 알리는 통지이다. <br><br>
+
+
+    <br><br>
+
+
+    발생한 이벤트에 적절히 대처하기 위해 작성된 자바스크립트 코드를 <mark>이벤트 리스너</mark>라고 부른다. <br><br>
+    이벤트가 발생하지 않으면 브라우저 화면에는 아무 변화도 없다. <br><br>
+    이벤트가 발생하면 브라우저는 개발자가 작성한 이벤트 리스너 코드를 호출하여 이벤트를 처리하도록 한다.
+
+
+    <br><br><br>
+
+    <hr>
+
+    <h1>이벤트 종류</h1>
+    이벤트 리스너의 이름은 이벤트 이름 앞에 on을 덧붙인다. <br><br><br>
+
+    <img src="/이미지/주요이벤트.jpg" alt="" style="width: 1000px;"> <br><br>
+    <img src="/이미지/주요이벤트2.jpg" alt="" style="width: 1000px;"> <br><br>
+
+    <hr>
+
+    <h1>이벤트 리스너 만들기</h1>
+    자바스크립트 코드로 이벤트 리스너를 작성하는 방법은 다음 3가지이다. <br>
+
+    <ul>
+        <li>HTML 태그 내에 작성</li> <br>
+        <li>DOM 객체의 이벤트 리스너 프로퍼티에 작성</li> <br>
+        <li>DOM 객체의 addEventListener() 메소드 이용</li> <br>
+    </ul>
+
+    <br><br>
+
+    <h2>HTML 태그 내에 이벤트 리스너 작성</h2>
+    HTML 태그의 이벤트 리스너 속성에 리스너 코드를 직접 작성할 수 있다. <br><br>
+
+    <img src="/이미지/HTML태그이벤트1.jpg" alt="" style="width: 1000px;"> <br><br>
+
+    <img src="/이미지/HTML태그이벤트2.jpg" alt="" style="width: 1000px;"> <br><br>
+
+
+    <br><br><br>
+
+
+    <h2>DOM 객체의 이벤트 리스너 프로퍼티에 리스너 등록</h2>
+    <img src="/이미지/DOM객체의 이벤트 리스너1.jpg" alt="" style="width: 1000px;"> <br><br>
+    <img src="/이미지/DOM객체의 이벤트 리스너2.jpg" alt="" style="width: 1000px;"> <br><br>
+
+
+    <br><br><br>
+
+
+    <h2>DOM 객체의 addEventListener()메소드 활용</h2>
+    <img src="/이미지/DOM 객체 메소드활용1.jpg" alt="" style="width: 1000px;"> <br><br>
+    
+    addEventListener()를 사용하여 함수 over()를 객체 p의 onmouseover 리스너로 등록하는 코드는 다음과 같이 작성한다. <br><br>
+    다른 방법과 달리 addEventListener() 를 사용하면 등록한 리스너를 removeEventListener() 메소드를 이용하여 제거할 수 있고, <br><br>
+    동일한 이벤트 리스너에 <mark>여러 함수를 중복하여 등록</mark> 할 수 있다. <br><br>
+
+    p.addEventListener(<span style="color: red;">"mouseover"</span>, over); <span style="color: green">// onmouseover 리스너로 over() 함수 등록</span> 
+
+    <br><br><br>
+
+    <img src="/이미지/DOM 객체 메소드활용2.jpg" alt="" style="width: 1000px;">
+</body>
+</html>
