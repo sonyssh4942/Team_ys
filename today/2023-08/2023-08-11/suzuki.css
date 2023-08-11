@@ -1,0 +1,127 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* 헤더 */
+header{
+    width: 100%;
+    height: 80px;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 메인페이지 */
+.icon{
+    margin: 30px;
+    display: inline-flex
+}
+
+/* 메뉴 */
+.menu{
+    display: flex;
+    
+}
+
+.menuul{
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menuli{
+    display: inline-flex;
+    margin-right: 60px;
+    font-size: larger;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* 헤더 로그인, 회원가입 */
+.loginsignup, .login, .signup{
+    margin: 10px;
+    font-size: large;
+    font-weight: bolder;
+    display: flex;
+    width: 250px;
+}
+
+/* 링크 */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* 메인 본문 */
+
+main section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/* 배경 이미지 */
+main::after{
+    width: 100%;
+    height: 100%;
+    background-image: url(/SUZUKI/이미지/suzukiimg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+/* 바이크 리스트 */
+
+.bikelist{
+    width: 400px;
+    height: 350px;
+    margin: 80px;
+    border: 3px solid;
+    
+}
+
+/* 바이크 리스트 테이블 */
+table{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table tr,td{
+    border-top: 3px solid;
+    padding: 0;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* 바이크 이미지 */
+.bike{
+    width: 100%;
+    height: 100%;
+}

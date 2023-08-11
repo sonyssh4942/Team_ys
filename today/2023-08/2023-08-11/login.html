@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .header{
+            height: 80px;
+            
+            border-bottom: 1px solid;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .icon, .signup{
+            margin: 30px;
+            font-size: large;
+            font-weight: bolder;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .login{
+            margin: 50px;
+            
+            width: 500px;
+            height: 500px;
+            
+        }
+
+        .logintext{
+            margin: 30px;
+            text-align: center;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        .logintable {
+            width: 100%;
+        }
+
+        table{
+            width: 100%;
+        }
+
+        input{
+            width: 100%;
+            height: 40px;
+            padding: 0;
+            font-size: 25px;
+        }
+
+        #loginbtn{
+            width: 100%;
+            height: 50px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: dodgerblue;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="icon">
+                <a href="/main.html">
+                    <img src="/이미지/Motorcycle.png" alt="" style="width: 100px;">
+                </a>
+            </div>
+            <div class="signup">
+                <a href="/signup.html">회원가입</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="login">
+            <div class="logintext">로 그 인</div>
+            <form action="">
+                <div class="logintable">
+                    <table>
+                        <tr>
+                            <td>아이디</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>비밀번호</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="password">
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="loginbtn">
+                    <input type="submit" value="로그인" id="loginbtn">
+                </div>
+            </form>
+            
+        </div>
+        
+    </section>
+</body>
+</html>
